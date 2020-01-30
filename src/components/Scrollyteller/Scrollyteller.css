@@ -1,0 +1,31 @@
+.scrollyteller article {
+	position: relative;
+}
+.scrollyteller figure.sticky {
+	background-color: steelblue;
+	color: white;
+	height: 500px;
+	text-align: center;
+	width: 100%;
+
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+
+.scrollyteller figure.sticky h2 {
+	font-size: 6rem;
+	padding-top: 25%;
+}
+
+.scrollyteller .step {
+	border: 1px solid red;
+	height: 50%;
+	margin: 100% auto 0 auto;
+	max-width: 400px;
+}
+
+.scrollyteller .step:last-of-type {
+	margin-bottom: 110%;
+}
