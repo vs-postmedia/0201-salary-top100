@@ -58,7 +58,7 @@ export class Scrollyteller extends Component {
 	render() {
 		return (
 			<div className='scrollyteller'>
-				<p className='steps'>These were the 100 top-paid public sector employees in B.C. in 2017/18. Everyone shown here earned more than $400,000.</p>
+				<p className='steps'>The 100 highest–paid public sector employees in 2017–18 earned more than $400,000.</p>
 				<figure className='sticky'>
 					<FlourishEmbed index={this.state.stepValue}
 						embedID='174657'
