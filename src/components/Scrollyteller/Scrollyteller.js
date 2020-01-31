@@ -55,10 +55,11 @@ export class Scrollyteller extends Component {
 		});
 	}
 
+	// <p className='steps'>The 100 highest–paid public sector employees in 2017–18 earned more than $400,000.</p>
 	render() {
 		return (
 			<div className='scrollyteller'>
-				<p className='steps'>The 100 highest–paid public sector employees in 2017–18 earned more than $400,000.</p>
+				
 				<figure className='sticky'>
 					<FlourishEmbed index={this.state.stepValue}
 						embedID='174657'
