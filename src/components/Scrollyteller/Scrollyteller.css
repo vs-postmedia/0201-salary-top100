@@ -1,8 +1,14 @@
-.scrollyteller article {
+.scrollyteller {
 	position: relative;
 }
+.scrollyteller .scroll-container {
+	overflow-y: scroll;
+	position: relative;
+}
+.scrollyteller .scroll-container.no-pointer {
+	pointer-events: none;
+}
 .scrollyteller figure.sticky {
-	background-color: steelblue;
 	color: white;
 	height: 500px;
 	text-align: center;
@@ -20,12 +26,11 @@
 }
 
 .scrollyteller .step {
-	border: 1px solid red;
 	height: 50%;
 	margin: 100% auto 0 auto;
 	max-width: 400px;
 }
 
 .scrollyteller .step:last-of-type {
-	margin-bottom: 110%;
+	margin-bottom: 100%;
 }

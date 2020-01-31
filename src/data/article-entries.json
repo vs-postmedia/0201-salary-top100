@@ -1,14 +1,26 @@
 [
 	{
 		"id": 1,
-		"text": "Step text 10"
+		"text": "Only 19 of them were women."
 	},
 	{
 		"id": 2,
-		"text": "Step text 20"
+		"text": "Most of the top earners worked for Crown Corporations – B.C. Investment Management Corporation in particular. Only 16% were women."
 	},
 	{
 		"id": 3,
-		"text": "Step text 30"
+		"text": "At UBC, where thirteen of the top earners were employed, only one was a woman."
+	},
+	{
+		"id": 4,
+		"text": "Women were also concentrated in the low end of the salary spectrum. Half the men in the top 100 earned less than $500,000 –  almost 70% of the women did."
+	},
+	{
+		"id": 5,
+		"text": "B.C. is one of only four provinces without provincial pay equity legislation, which requires employers to give equal pay to women and men for equal work. B.C. also has one of the largest gaps in gender pay, according to Statistics Canada."
+	},
+	{
+		"id": 6,
+		"text": ""
 	}
 ]

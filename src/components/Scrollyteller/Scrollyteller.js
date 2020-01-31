@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import EnterView from 'enter-view';
 import ArticleList from '../ArticleList/ArticleList';
+import FlourishEmbed from '../FlourishEmbed/FlourishEmbed';
 
 import './Scrollyteller.css';
 
@@ -13,13 +14,15 @@ export class Scrollyteller extends Component {
 		EnterView({
 			// selector: stepSel.nodes(),
 			selector: '.step',
-			offset: 0.25,
+			offset: 0.1,
 			enter: el => {
 				el.classList.add('entered');
 				const index = el.getAttribute('data-index');
 				
 				this.updateGraphic(el, index);
 				// console.log(`ENTER: ${index}`)
+
+				this.togglePointerEvents(index);
 			},
 			exit: el => {
 				let index = el.getAttribute('data-index');
@@ -37,9 +40,16 @@ export class Scrollyteller extends Component {
 		});
 	}
 
-	updateGraphic(el, index) {
-		console.log(index, el)
+	togglePointerEvents(index) {
+		const container = document.querySelectorAll('.scroll-container');
+		if (parseInt(index) === 6) {
+			container[0].className += ' no-pointer';
+		} else {
+			// container[0].className = 'scroll-container';
+		}
+	}
 
+	updateGraphic(el, index) {
 		this.setState({
 			stepValue: index
 		});
@@ -48,11 +58,14 @@ export class Scrollyteller extends Component {
 	render() {
 		return (
 			<div className='scrollyteller'>
+				<p className='steps'>These were the 100 top-paid public sector employees in B.C. in 2017/18. Everyone shown here earned more than $400,000.</p>
 				<figure className='sticky'>
-					<h2>{this.state.stepValue}</h2>
+					<FlourishEmbed index={this.state.stepValue}
+						embedID='174657'
+					></FlourishEmbed>
 				</figure>
 
-				<article>
+				<article className='scroll-container'>
 					<ArticleList
 						ArticleEntries={this.props.ArticleEntries}
 					></ArticleList>
