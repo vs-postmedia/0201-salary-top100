@@ -2,7 +2,7 @@
 	position: relative;
 }
 .scrollyteller .scroll-container {
-	overflow-y: scroll;
+	/*overflow-y: scroll;*/
 	position: relative;
 }
 .scrollyteller .scroll-container.no-pointer {

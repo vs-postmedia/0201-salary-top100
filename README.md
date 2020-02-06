@@ -7,4 +7,4 @@ https://github.com/russellgoldenberg/enter-view
 
 
 EMBED CODE
-<iframe src="https://vs-postmedia.github.io/0201-salary-top100/" style="height:500px;width:100%" frameborder="no" scrolling="yes" allow-top-navigation-by-user-activation ></iframe>
+<iframe src="https://vs-postmedia.github.io/0201-salary-top100/" style="height:500px;width:100%" frameborder="0" scrolling="yes" allow-top-navigation-by-user-activation scrollying="yes"></iframe>
