@@ -2,7 +2,6 @@
 	position: relative;
 }
 .scrollyteller .scroll-container {
-	/*overflow-y: scroll;*/
 	position: relative;
 }
 .scrollyteller .scroll-container.no-pointer {
@@ -26,11 +25,15 @@
 }
 
 .scrollyteller .step {
-	height: 50%;
-	margin: 100% auto 0 auto;
+	margin: 75% auto;
 	max-width: 400px;
+	text-align: center;
+}
+.scrollyteller .step > p {
+	margin-bottom: 3px;
 }
 
 .scrollyteller .step:last-of-type {
-	margin-bottom: 100%;
+	background-color: grey;
+	margin-bottom: 10%;
 }

@@ -7,6 +7,7 @@ import './Scrollyteller.css';
 
 export class Scrollyteller extends Component {
 	state = {
+		embedID: '174657',
 		stepValue: 0
 	};
 
@@ -14,7 +15,7 @@ export class Scrollyteller extends Component {
 		EnterView({
 			// selector: stepSel.nodes(),
 			selector: '.step',
-			offset: 0.1,
+			offset: 0.15,
 			enter: el => {
 				el.classList.add('entered');
 				const index = el.getAttribute('data-index');
@@ -32,9 +33,6 @@ export class Scrollyteller extends Component {
 				// console.log(`EXIT: ${index}`)	
 			},
 			progress: function(el, progress) {
-				// el.style.opacity = progress;
-				// let p = el.querySelector('.progress');
-  				// p.innerText = progress.toFixed(2);
 			},
 			once: false // trigger just once
 		});
@@ -43,7 +41,8 @@ export class Scrollyteller extends Component {
 	togglePointerEvents(index) {
 		const container = document.querySelectorAll('.scroll-container');
 		if (parseInt(index) === 6) {
-			container[0].className += ' no-pointer';
+			container[0].className += ' no-pointer ';
+			// fix graphic to bottom
 		} else {
 			// container[0].className = 'scroll-container';
 		}
@@ -62,7 +61,7 @@ export class Scrollyteller extends Component {
 				
 				<figure className='sticky'>
 					<FlourishEmbed index={this.state.stepValue}
-						embedID='174657'
+						embedID={this.state.embedID}
 					></FlourishEmbed>
 				</figure>
 
