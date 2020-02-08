@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2978d459356108fd2b4d312a871f8054",
+    "revision": "5effd1b84b24a3125892c0eada52d0ff",
     "url": "/0201-salary-top100/index.html"
   },
   {
-    "revision": "0969c8483e5a70cc2066",
-    "url": "/0201-salary-top100/static/css/main.a63bf786.chunk.css"
+    "revision": "f3a4b900ac95f3a93507",
+    "url": "/0201-salary-top100/static/css/main.e7c2bdea.chunk.css"
   },
   {
     "revision": "af8bed88a790409a6cc8",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/0201-salary-top100/static/js/2.1df6b45f.chunk.js.LICENSE"
   },
   {
-    "revision": "0969c8483e5a70cc2066",
+    "revision": "f3a4b900ac95f3a93507",
     "url": "/0201-salary-top100/static/js/main.eea0d048.chunk.js"
   },
   {
